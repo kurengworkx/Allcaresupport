@@ -1,0 +1,220 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: none;
+}
+
+.btn-primary {
+    background: var(--clr-primary-500);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--clr-primary-700);
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background: white;
+    color: var(--clr-primary-900);
+    border: 1px solid var(--clr-border);
+}
+
+.btn-outline:hover {
+    border-color: var(--clr-primary-900);
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card-img-wrap {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+.service-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-card-icon {
+    width: 40px; height: 40px;
+    background: var(--clr-primary-100);
+    color: var(--clr-primary-500);
+    border-radius: var(--radius-sm);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    color: var(--clr-primary-900);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    color: var(--clr-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--clr-primary-500);
+}
+
+/* Feature & Step Cards */
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--clr-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-card i {
+    color: var(--clr-primary-500);
+    width: 32px; height: 32px;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: var(--clr-text-muted);
+    font-size: 0.95rem;
+}
+
+.step-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--clr-border);
+    position: relative;
+    box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    background: var(--clr-primary-100);
+    color: var(--clr-primary-500);
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-card p {
+    color: var(--clr-text-muted);
+    font-size: 0.95rem;
+}
+
+/* Base Image Wrapper */
+.image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--clr-primary-900);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.875rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--clr-border);
+    background: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--clr-primary-500);
+    box-shadow: 0 0 0 3px var(--clr-primary-100);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-success {
+    display: none;
+    background: #dcfce7;
+    color: #166534;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allcare Community Support | Personalised NDIS Services</title>
+    <meta name="description" content="Allcare Community Support provides personalised NDIS support services across Melbourne and Adelaide, including in-home support, respite, SIL, SDA, transport and community access.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Allcare Home">
+                <img src="https://www.allcaresupport.org.au/_next/static/media/all-care-logo.a173fae4.svg" alt="Allcare Logo">
+            </a>
+            
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="#services" class="nav-link">SERVICES <i data-lucide="chevron-down" style="width:14px; margin-left:4px;"></i></a>
+                    <div class="nav-dropdown">
+                        <a href="in-home-support.html">In-Home & Domestic Support</a>
+                        <a href="respite-care.html">Respite Care</a>
+                        <a href="sda.html">Specialist Disability Accommodation (SDA)</a>
+                        <a href="sil.html">Supported Independent Living (SIL)</a>
+                        <a href="social-inclusion.html">Social Inclusion</a>
+                        <a href="transport.html">Transport Assistance</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-link">LOCATIONS</a>
+                <a href="#about" class="nav-link">ABOUT US</a>
+                <a href="#ndis" class="nav-link">NDIS INFO</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">GET A CONSULTATION <i data-lucide="arrow-right" style="width:16px;"></i></a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#services" class="nav-link">SERVICES</a>
+            <a href="#contact" class="nav-link">LOCATIONS</a>
+            <a href="#about" class="nav-link">ABOUT US</a>
+            <a href="#ndis" class="nav-link">NDIS INFO</a>
+            <a href="#contact" class="btn btn-primary">GET A CONSULTATION</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('https://www.allcaresupport.org.au/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-vision.0ec2bbb9.jpg&w=1920&q=75');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-container reveal-up">
+            <div class="hero-text-block hero-interactive-block" style="max-width: 700px;">
+                <!-- Glassmorphic Status Pill -->
+                <div style="display:inline-flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); padding:0.4rem 1rem; border-radius:100px; margin-bottom:1.5rem; border:1px solid rgba(255,255,255,0.25);">
+                    <div style="width:8px; height:8px; background:#f97316; border-radius:50%; box-shadow:0 0 10px #f97316;"></div>
+                    <span style="font-size:0.8rem; font-weight:700; letter-spacing:0.1em; color:white; text-transform:uppercase;">Professional & Trusted</span>
+                </div>
+                
+                <!-- Modern Typographic H1 -->
+                <h1 class="interactive-title">
+                    Disability Support<br>
+                    <span class="stroke-text">Services.</span>
+                </h1>
+                
+                <div class="interactive-reveal">
+                    <div class="interactive-reveal-inner">
+                        <!-- Anchored Quote Description -->
+                        <p class="interactive-desc">
+                            The most reliable NDIS support to empower you and your loved ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Tabs -->
+    <div class="hero-tabs-wrap reveal-up">
+        <div class="container">
+            <div class="hero-tabs">
+                <a href="in-home-support.html" class="hero-tab-link active">In-Home Care</a>
+                <a href="sda.html" class="hero-tab-link">Accommodation (SDA)</a>
+                <a href="sil.html" class="hero-tab-link">Supported Living (SIL)</a>
+                <a href="social-inclusion.html" class="hero-tab-link">Community Access</a>
+                <a href="respite-care.html" class="hero-tab-link">Respite Care</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container grid-2">
+            <div class="image-wrapper reveal-right" style="border-radius:1rem;">
+                <img src="https://www.allcaresupport.org.au/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwatering-garden.3e407624.jpg&w=1920&q=75" alt="Person watering garden" class="img-cover" loading="lazy">
+            </div>
+
+            <div class="reveal-up dl-1">
+                <h2 class="section-title">Enriching lives since 2001</h2>
+                <p class="section-desc mb-6">
+                    We provide genuine, respectful, and person-centred support for people living with disability, helping each person build independence and confidence in everyday life.
+                </p>
+                <p class="section-desc mb-6">
+                    Our mission is to help individuals and their families accomplish what matters most to them. We do this by delivering high-quality, flexible support across the home and community, always focusing on your unique goals.
+                </p>
+                <a href="#services" class="btn btn-outline">See how we help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section bg-slate">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Why families choose Allcare</h2>
+                <p class="section-desc">Support that is flexible, respectful and built around the individual.</p>
+            </div>
+
+            <div class="grid-3 reveal-up dl-1">
+                <div class="feature-card">
+                    <i data-lucide="badge-check"></i>
+                    <h3>Registered & trusted</h3>
+                    <p>Experienced support backed by compliance, accountability, and genuine care.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="users-round"></i>
+                    <h3>Person-centred services</h3>
+                    <p>Support designed around each person’s goals, unique needs, and preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="map-pinned"></i>
+                    <h3>Local support teams</h3>
+                    <p>Responsive and dedicated local staff across both Melbourne and Adelaide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-desc">Practical, tailored supports designed to promote independence and wellbeing.</p>
+            </div>
+
+            <div class="grid-services mt-8">
+                <!-- Group: Daily Living -->
+                <a href="in-home-support.html" class="service-card reveal-up">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2F9fa5e60fd6ca42c1c4e9339abb1228ef7d0bce79-2500x2000.jpg&w=1080&q=75" alt="In-Home Support" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="home"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Daily Living & Support</span>
+                        <h3>In-Home & Domestic Support</h3>
+                        <p>Assistance with daily living activities to ensure you live comfortably and safely at home.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+
+                <a href="respite-care.html" class="service-card reveal-up dl-1">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2Fb266aa1865a9ad795f01e80949540e2fab1bb157-2500x2000.jpg&w=1080&q=75" alt="Respite Care" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="sun"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Daily Living & Support</span>
+                        <h3>Respite Care</h3>
+                        <p>Short-term and medium-term care giving primary carers a break while ensuring you are fully supported.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+
+                <!-- Group: Accommodation -->
+                <a href="sda.html" class="service-card reveal-up dl-2">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2Fdc3e704042da980972c6bfd071a72cd32286d111-2500x2000.jpg&w=1080&q=75" alt="SDA Hosting" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="building"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Specialist Housing</span>
+                        <h3>Specialist Disability Accommodation</h3>
+                        <p>Purpose-built accessible homes designed for people with extreme functional impairment.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+
+                <a href="sil.html" class="service-card reveal-up">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2F97d0a210c042c4d4c2c8eed7df2ae0b647cf52d9-2500x2000.jpg&w=1080&q=75" alt="SIL Supported Living" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="key"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Specialist Housing</span>
+                        <h3>Supported Independent Living</h3>
+                        <p>Intensive 24/7 supported living arrangements focused on building capacity in a shared home.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+
+                <!-- Group: Community -->
+                <a href="social-inclusion.html" class="service-card reveal-up dl-1">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2F0e63c664681ed22931e62183a7a68e757647be6c-2065x1313.jpg&w=1080&q=75" alt="Social Inclusion" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="users"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Community & Access</span>
+                        <h3>Social Inclusion</h3>
+                        <p>Support to build confidence, connect socially, and participate actively in the local community.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+
+                <a href="transport.html" class="service-card reveal-up dl-2">
+                    <div class="service-card-img-wrap">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6mvucgq6%2Fproduction%2F6b8fc378ba6f5110b5d51d0117dd8c62045afd89-2500x1667.jpg&w=1080&q=75" alt="Transport Assistance" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon"><i data-lucide="car"></i></div>
+                        <span style="color:var(--clr-primary-500); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:0.25rem;">Community & Access</span>
+                        <h3>Transport Assistance</h3>
+                        <p>Safe and reliable travel assistance for appointments, education, work, and social events.</p>
+                        <span class="service-link" style="display:inline-flex; align-items:center; gap:0.25rem;">Learn more <i data-lucide="arrow-right" style="width:16px;"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="section bg-slate">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Getting started is simple</h2>
+                <p class="section-desc">Your journey to tailored support explained in three easy steps.</p>
+            </div>
+
+            <div class="grid-3 reveal-up dl-1">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Contact us</h3>
+                    <p>Tell us about your needs, goals, and location. We want to understand what matters most to you.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Discuss your supports</h3>
+                    <p>We help you understand suitable services and how your NDIS plan can support your objectives.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Start with confidence</h3>
+                    <p>We build a flexible support plan together and introduce you to your dedicated care team.</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                 <a href="#contact" class="btn btn-primary" style="margin-top:2rem;">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NDIS Section -->
+    <section id="ndis" class="section">
+        <div class="container grid-2">
+            <div class="reveal-right">
+                <img src="https://www.allcaresupport.org.au/_next/static/media/i-love-ndis.157d2d32.svg" alt="I Love NDIS" style="height:60px; margin-bottom:1.5rem;">
+                <h2 class="section-title">Navigating the NDIS</h2>
+                <p class="section-desc mb-6">
+                    Understanding the National Disability Insurance Scheme (NDIS) can be overwhelming. As a registered provider, we're here to help you make sense of your plan and maximize your funding.
+                </p>
+                <a href="https://www.ndis.gov.au/applying-access-ndis/am-i-eligible" target="_blank" rel="noopener noreferrer" class="btn btn-outline mb-4">Check NDIS Eligibility <i data-lucide="external-link" style="width:16px;"></i></a>
+            </div>
+            <div class="image-wrapper reveal-left dl-1" style="border-radius:1rem;">
+                <img src="https://www.allcaresupport.org.au/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fworker-with-flowers.6b4658e9.jpg&w=1920&q=75" alt="Worker with flowers" class="img-cover" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Locations -->
+    <section id="contact" class="section bg-slate">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Ready to take the next step?</h2>
+                <p class="section-desc">Reach out to our teams in Adelaide or Melbourne.</p>
+            </div>
+            
+            <div class="grid-2">
+                <!-- Contact Form -->
+                <div class="feature-card reveal-up dl-1" style="background:white; padding:2.5rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send an enquiry</h3>
+                    
+                    <div id="formSuccess" class="form-success">
+                        Thank you! Your message has been sent. We will be in touch shortly.
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" type="text" class="form-control" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" class="form-control" placeholder="jane@example.com" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="tel" class="form-control" placeholder="0400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help?</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about the supports you are looking for..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Enquiry</button>
+                    </form>
+                </div>
+
+                <!-- Locations -->
+                <div class="reveal-up dl-2">
+                    <div class="feature-card mb-6">
+                        <h3 style="display:flex; align-items:center; gap:0.5rem; font-size:1.25rem; margin-bottom:1rem;"><i data-lucide="map-pin" style="width:20px; height:20px; color:var(--clr-primary-500); margin:0;"></i> Adelaide Office</h3>
+                        <p style="margin-bottom:1rem;">Level 1, 560 North East Road<br>Holden Hill SA 5088</p>
+                        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                            <a href="tel:0884723339" style="font-weight:500;">(08) 8472 3339</a>
+                            <a href="mailto:enquiries@allcaresupport.org.au" style="font-weight:500;">enquiries@allcaresupport.org.au</a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3 style="display:flex; align-items:center; gap:0.5rem; font-size:1.25rem; margin-bottom:1rem;"><i data-lucide="map-pin" style="width:20px; height:20px; color:var(--clr-primary-500); margin:0;"></i> Melbourne Office</h3>
+                        <p style="margin-bottom:1rem;">11 Clarence St<br>East Bentleigh Victoria 3165</p>
+                        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                            <a href="tel:0390883631" style="font-weight:500;">(03) 9088 3631</a>
+                            <a href="mailto:officevic@allcaresupport.org.au" style="font-weight:500;">officevic@allcaresupport.org.au</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="https://www.allcaresupport.org.au/_next/static/media/all-care-logo.a173fae4.svg" alt="Allcare Logo" class="footer-logo">
+                    <p style="color:#94a3b8; font-size:0.95rem; line-height:1.5;">Personalised NDIS support services across Melbourne and Adelaide promoting independence and wellbeing.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#ndis">NDIS Information</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">NDIS Code of Conduct</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color:white; margin-bottom:1.5rem; font-size:1.1rem;">Accreditations</h4>
+                    <div class="certification-logos">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Facnc-registered-charity.e82baa37.png&w=1920&q=75" alt="ACNC Charity" loading="lazy">
+                        <img src="https://www.allcaresupport.org.au/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsai-ndis-certified-system.cf2b6794.png&w=640&q=75" alt="SAI NDIS Certified" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Allcare Community Support. All rights reserved.</p>
+                <span>Monday - Friday 9am - 5pm</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Form Submission Handler
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        if(contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const btn = contactForm.querySelector('button[type="submit"]');
+                const originalText = btn.textContent;
+                
+                // Simulate network request
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    formSuccess.style.display = 'block';
+                    contactForm.reset();
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formSuccess.style.display = 'none';
+                    }, 5000);
+                }, 1000);
+            });
+        }
+
+        // Mobile Menu Toggle
+        const toggleBtn = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(toggleBtn && mobileMenu) {
+            toggleBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Close menu on link click
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            if(window.lucide) {
+                lucide.createIcons();
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {root: null, rootMargin: '0px', threshold: 0.1});
+            
+            document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
