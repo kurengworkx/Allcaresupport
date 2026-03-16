@@ -1,0 +1,140 @@
+:root {
+    /* Color Palette - Clean Tech Health Start-up */
+    --clr-bg: #ffffff;
+    --clr-surface: #ffffff;
+    --clr-surface-glass: rgba(255, 255, 255, 0.9);
+    
+    /* Primary (Deep Navy & Accent Blue) */
+    --clr-primary-900: #1f2937; /* Dark text */
+    --clr-primary-700: #374151;
+    --clr-primary-500: #3b82f6; /* Elderly bright blue */
+    --clr-primary-300: #60a5fa;
+    --clr-primary-100: #eff6ff;
+    
+    /* Accents */
+    --clr-accent-600: #2563eb;
+    --clr-accent-100: #f0f9ff;
+
+    /* Text */
+    --clr-text-main: #4b5563; 
+    --clr-text-muted: #9ca3af; 
+    --clr-text-light: #f8fafc;
+
+    /* Semantic */
+    --clr-border: #e5e7eb;
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+    
+    /* Shadows & Transitions */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Radii */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--clr-bg);
+    color: var(--clr-text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Base Accessibility / Focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--clr-primary-500);
+    outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--clr-primary-900);
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: var(--clr-primary-500);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--clr-primary-700);
+}
+
+/* Layout Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.section-header {
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.section-header.center {
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    color: var(--clr-primary-900);
+}
+
+.section-subtitle {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1.5rem;
+}
+
+.accent-title {
+    color: var(--clr-primary-500);
+}
+
+.section-desc {
+    font-size: 1.125rem;
+    color: var(--clr-text-muted);
+}
+
+.mb-8 { margin-bottom: 2rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.text-center { text-align: center; }
