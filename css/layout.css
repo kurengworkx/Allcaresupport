@@ -201,11 +201,11 @@
 /* Hero Section Image Background Style */
 .hero {
     position: relative;
-    padding: 220px 0 160px; 
+    padding: 220px 0 0px; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 85vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -488,7 +488,7 @@
     .nav-links, .nav-actions { display: none; }
     .mobile-menu-toggle { display: block; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
-    .hero { padding: 140px 0 100px; }
+    .hero { padding: 140px 0 0px; }
     .hero-title { font-size: 2.5rem; }
     .hero-tabs { flex-direction: column; border-radius: 12px; }
     .hero-tab-link { border-right: none; border-bottom: 1px solid var(--clr-border); border-top: none; border-left: 4px solid transparent; }
